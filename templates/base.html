@@ -1,0 +1,32 @@
+{% load static %}
+<html>
+<head>
+    <link>
+    <head>
+        <link href="{% static 'css/base.css' %}" rel="stylesheet">
+        #google fonts
+        <title>
+            {% block title %}
+            Blog App
+            {% endblock title %}
+        </title>
+    </head>
+
+<body>
+    <header>
+        <div class="nav-left">
+            <h1><a href="{% url 'home' %}">Django Blog</a></h1>
+        </div>
+        <div class="nav-right">
+
+            
+        </div>
+        <h1>
+            <a href="{% url 'home' %}">Django Blog</a>
+        </h1>
+    </header>
+    {% block content %}
+    {% endblock content%}
+</body>
+
+</html>
